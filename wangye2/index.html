@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>百强家具</title>
+	<style>
+		body{margin: 0;padding: 0;}
+		*{font-family:helvetica，arial，"微软雅黑";font-size: 18px;}
+		img{display: block;}
+		a{text-decoration: none;color:#2E2E2E }
+		ul{margin: 0;padding: 0;list-style: none;}
+		h1,h2,h3{margin: 0;font-weight: normal;}
+		p{margin: 0;}
+		
+/*导航*/	
+		.beijing{position: relative;}
+		.beijing > img{position: relative;width: 100%;}
+		.logo{left:12%;top:28px;position: absolute;}
+		
+		.daohangkuang div{float: left;color:#2E2E2E;margin-left: 60px;}
+		.daohangkuang {position: absolute;left: 0; top:52px;left: 550px;left:calc(50% - 450px);}
+		.daohangkuang div a:hover{color: coral;}
+		.fangdajing{position: absolute;left:76%;top: 56px;}
+		.xiaokuang{width: 744px;height: 236px;background-color: rgba(0,0,0,0.65);position: absolute;left: 0;top: 0;left: calc(50% - 372px);top:calc(50% - 118px);}
+		.wenben{text-align: center;margin-top: 60px;color: #FFFFFF;}
+		.text{font-size: 36px;}
+		.text2{font-size: 46px;}
+/*第一级*/		
+		.diyi{max-width: 1200px;margin: 0 auto;margin-top: 80px;color: #565656;}
+		.diyi .tu{float: left;text-align: center}
+		.clearfix{clear: both;}
+		.hanggao{margin-top: 16px;}
+		.diyi .tu{width:calc(100% / 4 - 20px);margin: 0 10px;}
+		.diyi .tu img{width:  100%;}
+		.heiheikuang{position: relative;}
+		.heikuang{position:absolute;width:100%;height: 100%;background-color: rgba(0,0,0,0.0);left: 0;top: 0;transition: 0.6s}
+		.jiantou{position: absolute;left: 0;top: 0;left: calc(50% - 37px);top:calc(50% - 16px);display: none;}
+		.tu:hover .heikuang{background-color: rgba(0,0,0,0.8);}
+		
+		.tu:hover  .jiantou{display: block;}
+/*banner*/
+		*{
+		padding: 0px;
+		margin: 0px;
+	}
+	#flash{
+		height: 435px;
+		
+		margin: 0 auto;
+		position: relative;
+		overflow:hidden;
+	}
+	#flash .pic_box{
+		width: 5760px;
+		height: 475px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+	#flash .pic_box img{
+		float: left;
+	}
+	#flash ul{
+		position: absolute;
+		left:calc(50% - 60px);
+		bottom: 10px;
+	}
+	#flash ul li{
+		float: left;
+		list-style: none;
+		width: 20px;
+		height: 20px;
+		margin:0 10px;
+		background-color:#FFFFFF;
+		border-radius:10px;
+		opacity: 0.5;
+		filter: alpha(opacity=50);
+	}
+	#flash ul li.cur{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	#flash .huakuai{
+		width: 42px;
+		height: 6px;
+		font-size: 0px;/*ie6*/
+		position: absolute;
+		top: 469px;
+		left: 0px;
+		background: url( image/fangdajing.png) no-repeat -57px -86px;
+	}
+/*第二级*/	
+		.dier{max-width: 1200px;margin: 0 auto;margin-top:80px;}
+		.dier img{position: relative;left: calc(50% - 157px); }
+		.wenbener{margin-top: 52px;color: #565656;}
+		.wenbener{float:left;}
+		.dawenbensan{margin-top: 44px;}
+		.wenbensan img{float: left;margin-top: 30px;}
+		.tutututu{margin-left: 100px;}
+		.dawenbensan{max-width: 1200px;margin: 0 auto;}
+		.youtu{float: right;margin-top:44px; }
+		.zuotu img{float: left;}
+		.bq{margin-bottom: 10px;}
+		.zw{margin-bottom: 5px;}
+		.xian{margin-bottom:10px;}
+		
+		.diyikekong{max-width: 1220px;margin: 0 auto;margin-top: 40px;color: #565656;}
+		.diyikekong .tu{float: left;text-align: center}
+		.clearfix{clear: both;}
+		.hanggao{margin-top: 16px;font-size:24px;margin-bottom:5px; }
+		.diyikekong .tu{width:calc(100% / 4 - 20px);margin: 0 10px;}
+		.diyikekong .tu img{width:  100%;}
+		.diyikekong img:hover{box-shadow:0px 7px 27px 4px rgba(153,153,153,0.81);transition: 0.3s;}
+		.youtu:hover{box-shadow:0px 7px 27px 4px rgba(153,153,153,0.81);transition: 0.3s;}
+		
+		
+/*banner2*/		
+		.bannerer{height: 184px;background-color: #313233;margin-top: 60px;width: 100%;}
+		.wenzierer{text-align: center;color:#FFFFFF;padding-top:35px;}
+		.bannerwenzi{font-size: 40px;margin-bottom: 16px;}
+/*相关服务*/		
+		.xiangguan{max-width: 1200px;margin: 0 auto;margin-top:40px;}
+		.xiangguantu img{float: left; width: calc(100% / 2 - 20px);margin:0 10px;}
+		.xiangguantu img:hover{box-shadow:0px 7px 27px 4px rgba(153,153,153,0.81);transition: 0.3s;}
+		
+		.jiameng{margin: 0 auto;text-align: center;margin-top: 32px;color: #565656;}
+		.baiqiangjiaju{font-size: 24px;}
+		.dianmianfenbu img{position: relative; left: calc(50% - 162px);margin-top: 30px;}
+		.dianmianfenbutu{position: relative; left: calc(50% - 450px);margin-top: 30px;}
+		.dianjiwenben a{margin-left:70%;top: 10px;color: #565656;}
+		.dianjiwenben a:hover{color:darkorange;}
+/*页脚*/	
+		.yejiao{width: 100%;background-color: #E6E6E6;margin-top: 60px;}
+		.logologo{max-width: 1200px;margin: 0 auto;}
+		.logologo img{position: relative; left: calc(50% - 52px);padding-top:20px;}
+		.yejiaowenzi{text-align: center;padding-top: 12px;}
+		.tubiao img{float: left;margin-left: 20px;position: relative; left: calc(50% - 100px);margin-top: 10px;}
+		.tubiao{max-width: 1200px;margin:0 auto;}
+		.weiba{width: 100%;height:40px;background-color: #313233;margin-top: 20px;text-align: center;padding-top: 15px;color: #FFFFFF;}
+			
+		.anniuanniu{width: 100px;margin: 0 auto;}
+		.ananniu{height: 60px;background-color:  #313233;}
+ .nn{margin-top: 10px;width: 100px;height: 30px;background-color:azure;color: black;}
+.nn:hover{background-color: azure;color:black;}
+		
+		
+	</style>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	var cur = 0;
+	function autoRun(){//自动轮播函数
+		cur++;
+		// if(cur==7){
+		// 	cur = 0;
+		// }
+		cur = (cur==3)?0:cur;//判断cur是否该变化
+
+		// 变化大图div
+		var left = cur* -1920;//计算大图div的left值
+		$('#flash .pic_box').animate({'left':left+'px'},300);//让大图div变换left值
+
+		// 变化小图列表
+		$('#flash ul li').eq(cur).addClass('cur').siblings('li').removeClass('cur');
+
+		// 小滑块
+		var huakuai_left = cur*42;//计算小滑块的left值
+		// $('#flash .huakuai').animate({'left':huakuai_left+'px'},300);
+		$('#flash .huakuai').css({'left':huakuai_left+'px'})
+	}
+
+	var timer = setInterval(autoRun,3000);//定时器设立
+
+	$('#flash ul li').mouseover(function(){
+		clearInterval(timer);
+		cur = $(this).index();//获得当前鼠标移入的li的序号
+		// 变化大图div
+		var left = cur* -1920;//计算大图div的left值
+		$('#flash .pic_box').stop().animate({'left':left+'px'},300);//让大图div变换left值
+
+		// 变化小图列表
+		$('#flash ul li').eq(cur).addClass('cur').siblings('li').removeClass('cur');
+
+		// 小滑块
+		var huakuai_left = cur*42;//计算小滑块的left值
+		// $('#flash .huakuai').animate({'left':huakuai_left+'px'},300);
+		$('#flash .huakuai').css({'left':huakuai_left+'px'})
+	})
+	$('#flash ul li').mouseout(function(){
+		timer = setInterval(autoRun,3000);//定时器设立
+	})
+})
+</script>
+	
+	
+</head>
+
+<body>
+<!--导航-->
+	<div class="beijing">
+	
+	     <img src="image/65x58PIC7Ua_1024.png">
+	
+		<div class="logo"><img src="image/logo.png"></div>
+		<div class="daohangkuang">
+			<div><a href="#">首页</a></div>	
+			<div><a href="#">所有产品</a></div>	
+			<div><a href="#">家具类别</a></div>	
+			<div><a href="#">特色服务</a></div>	
+			<div><a href="#">关于百强</a></div>	
+			<div><a href="#">联系我们</a></div>	
+			<div><a href="#">会员服务</a></div>
+		</div>
+		<div class="fangdajing"><img src="image/fangdajing.png"></div>
+	
+		<div class="xiaokuang">
+			
+			<div class="wenben">
+				<div class="text">BEKING</div>
+				
+				<div class="text2">美伦漫步系列</div>
+			</div>
+			</div>
+			</div>
+		<!--第一级-->	
+	<div class="diyi">
+		
+		<div class="tu"><div class="heiheikuang"><img src="image/xiaotu1.png"><div class="heikuang"></div><div class="jiantou"><img src="image/jiantou.png"></div></div>
+		<div class="hanggao">经典案例</div>
+		<div>CLASSIC CASE</div>
+		
+		</div>
+		<div class="tu"><div class="heiheikuang"><img src="image/xiaotu2.png"><div class="heikuang"></div><div class="jiantou"><img src="image/jiantou.png"></div></div>
+		<div class="hanggao">生活方式</div>
+		<div>MODE OF LIFE</div>
+		</div>
+		<div class="tu"><div class="heiheikuang"><img src="image/xiaotu3.png"><div class="heikuang"></div><div class="jiantou"><img src="image/jiantou.png"></div></div>
+		<div class="hanggao">活动信息</div>
+		<div>ACTIVEB INFORM</div>
+		</div>
+		<div class="tu"><div class="heiheikuang"><img src="image/xiaotu4.png"><div class="heikuang"></div><div class="jiantou"><img src="image/jiantou.png"></div></div>
+		<div class="hanggao">品牌文化</div>
+		<div>BRAND CULTURE</div>
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+			
+	<!--banner-->		
+	<style>
+.box{;overflow:hidden;margin-top: 60px;}
+#flash{width:1920px;left:calc(50% - 960px);}
+</style>
+<div class="box">
+	<div id="flash">
+			<div class="pic_box">
+				<img src="image/banner.png" alt="" />
+				<img src="image/timg.jpg" alt="" />
+				<img src="image/timg33.jpg" alt="" />
+			</div>
+			<ul>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+</div>
+    <!--第二级-->
+	<div class="dier">	
+	<img src="image/wenzi.png">
+	</div>	
+	<div class="dawenbensan" >
+	     <div class="wenbener">
+		     <div class="bq">百强家具：</div>
+	         <div class="zw">百强家具以简洁著称在营造简约复古的自然气氛百<p>
+强家具做工手艺令人印象深刻展现出一种朴素、清<p>
+新的原始之美,“BEKING”</div>
+	        <div class="xian">/////////////////////////////////////////////////////</div>
+			    <div class="zuotu">
+	              <img src= "image/wenben2.png">
+		     
+				<img class="tutututu" src="image/tu.png">	
+				</div>
+		</div>
+		<div class="youtu"><img src="image/tu333.png"></div>
+		
+		<div class="clearfix"></div>
+         
+      </div>
+
+		
+		
+            <div class="diyikekong">
+		
+		<div class="tu"><div><img src="image/er1.png"></div>
+		<div class="hanggao">新罗马</div>
+		<div>新古典主义风格</div>
+		</div>
+		<div class="tu"><div><img src="image/er2.png"></div>
+		<div class="hanggao">新德堡</div>
+		<div>简洁优雅、个性时尚风格</div>
+		</div>
+		<div class="tu"><div><img src="image/er3.png"></div>
+		<div class="hanggao">美伦漫步</div>
+		<div>简美古典风格</div>
+		</div>
+		<div class="tu"><div><img src="image/er4.png"></div>
+		<div class="hanggao">全屋定制</div>
+		<div>管家式服务、全屋家装一步到位</div>
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+				
+<!--banner2-->
+    
+	<div class="bannerer">
+		<div class="wenzierer">
+		<div class="bannerwenzi">BEKING</div>
+		<div>百强家具本着以服务为宗旨，多年来以最优势的服务让客户达到最大的满意度，用心创造出最好的家具是我<p>
+们一直所坚持的，让客户放心、满意、最大的宗旨</div>
+		</div>
+	</div>
+	<!--相关服务-->	
+		<div class="dier">	
+	<img src="image/biaotier.png">
+	    </div>	
+		
+	<div class="xiangguan">
+			<div class="xiangguantu">
+			    <img src="image/xiangguantu.png">
+			    <img src="image/xiangguantu2.png">
+				 <div class="clearfix"></div>
+			 </div> 
+			 
+			  <div class="jiameng">
+				<div class="baiqiangjiaju">百强家具全国诚邀您的加盟欢迎来电咨询</div>
+				<div>Top 100 furniture national invite you to join the welcome call advisory</div>
+			  </div>
+			  
+		<div class="dianmianfenbu"><img src="image/quangguowenzi.png"></div>
+			<div class="dianmianfenbutu"><img src="image/ditu.png"></div> 
+		<div class="dianjiwenben"><a href="#">点击查看你身边的百强 >></a></div> 
+	</div>
+		
+	<!--页脚-->
+	<div class="yejiao">
+		<div class="yejiaokuang">
+			<div class="logologo"><img src="image/logo.png"></div>
+			<div class="yejiaowenzi">享受网络&nbsp;&nbsp;&#124;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&#124;&nbsp;&nbsp;招商合作&nbsp;&nbsp;&#124;&nbsp;&nbsp;加入我们&nbsp;&nbsp;&#124;&nbsp;&nbsp;法律声明<p>分享到：</div>
+			<div class="tubiao">
+				<img src="image/tubiao.png">
+				<img src="image/tubaio2.png">
+				<img src="image/tubiao3.png">
+				<img src="image/tubiao4.png">
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="weiba">Copyright © 2014 BEKING ALL Rights Reserved. 京ICP备13031384号-1</div>
+		<div class="ananniu"><div class="anniuanniu"><a  class="nn"href="../wangye/wangyeq.html">返回主页</a></div></div>
+	</div>
+	
+	
+		
+		
+	
+
+
+
+
+</body>
+</html>
